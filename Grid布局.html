@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid布局</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 300px;;
+            margin: 0 auto;
+            display: grid;
+            background-color: gray;
+            grid-template-columns: 1fr 1fr 1fr; 
+            grid-template-rows:1fr 1fr 1fr;
+            grid-gap: 5px 5px;
+        }
+
+        .container div {
+            text-align: center;
+        /* line-height: 40px; */
+        color: white;
+        vertical-align:middle;
+        background-color: red;
+        font-weight: bold;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+
+    </div>
+    
+</body>
+</html>

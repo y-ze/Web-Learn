@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="vue.js"></script> -->
+    <!-- <script src="vue.js" type="text/javascript" charset="utf-8"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+
+    <div id="app">
+        {{ message }}
+    </div>
+
+    <div id="app-2">
+       <span v-bind:title="message">
+        鼠标悬停几秒钟查看此处动态绑定的提示信息！
+       </span>
+    </div>
+
+    <div id="app-3">
+        <p v-if="seen">现在你看到我了</p>
+      </div>
+
+    <div id="example">
+        <p>{{ a }}</p>
+    </div>
+
+    <ul id="app-4">
+        <li v-for="value in student">{{value}}</li>
+    </ul>
+     
+    <script src="vueIndex.js"></script>
+    <!-- <script src="index.js"></script> -->
+    
+</body>
+</html>

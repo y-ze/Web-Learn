@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件基础</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #app {
+        /* background-color: blue; */
+        width: 70%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    table {
+        /* border: 1px solid blue; */
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    td {
+        text-align: center;
+        /* border: 1px solid blue; */
+
+    }
+    td > input {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    td > label {
+        display: inline-block;
+        float: left;
+    }
+    </style>
+
+
+
+</head>
+<body>
+
+<div id="app">
+    <!-- {{ message }} -->
+    <button @click="addFn" type="button">按钮</button>
+    <abx v-if="isShow"></abx>
+    <home v-else></home>
+
+    <!-- 动态组件 keep-alive保存状态-->
+    <keep-alive>
+        <compontent v-bind:is="name"></compontent>
+    </keep-alive>
+
+    <father>
+        <template v-slot:one="abc">
+            <!-- <div v-for:"name in abc.names">name</div> -->
+            <div>12{{abc.names}}</div>
+        </template>
+    </father>
+    <!-- <info><info> -->
+</div>
+
+<!-- 创建组件
+    1.创建组件
+    2.注册组件
+    3.使用组件
+-->
+<template id="home">
+    <div>
+        <button @click="appFn" type="button">点击</button>
+        <p v-if="isShow">这是另一个首页</p>
+        <p v-else>这是另一个首页哈哈哈</p>
+        {{message + numbers}}
+        {{numbers}}
+    </div>
+</template>
+
+<template id="info">
+    <div>
+        <button @click="appFn" type="button">点击</button>
+        <p v-if="isShow">这是另一个组件</p>
+        <p v-else>这是另一个组件哈哈哈</p>
+        {{message + numbers}}
+        {{numbers}}
+    </div>
+</template>
+
+<template id="father">
+    <div>
+        <p>我是爸爸</p>
+        <slot name="one" v-bind:names="names">
+            <div>xiao xiao {{names}}</div>
+        </slot>
+        <!-- <slot name="two">
+            <div>xiao xiao1</div>
+        </slot> -->
+        {{ name }}
+        {{ age }}
+        <son :fname="name" :fage="age" v-on:pfn="fatherFn"></son>
+    </div>
+</template>
+
+<template id="son">
+    <div>
+        <button @click="sonFn" type="button">son方法</button>
+        <p>我是儿子</p>
+        "我爸爸" + {{  fname }}
+        "我爸爸" + {{ fage }}
+        
+    </div>
+</template>
+
+<!-- 组件传值
+1.父组件通过v-bind:自定义接受名称 = “要传递的名称”
+2.在子组件中通过props接受数据
+    接受格式：props：[自定义接受的名称]
+-->
+
+<!-- z组件方法传递
+1.在父组件通过v-on自定义接受名称 = ”传递的方法“
+2.在子组件中自定义一个方法
+3.在自定义方法中通过this.$emit("自定义接受名称")触发传递过来的方法
+-->
+
+<!-- 子组件传递数据给父组件
+    子组件调用方法时传递参数 传递的参数就是子组件需要传递的数据
+-->
+
+
+<script>
+// 全局
+// 1.创建全局组件
+// var profile = Vue.extend({
+//     template:
+//         '<div><p>这是一个组件</p></div>'
+// });
+// 注册 不能大写
+// Vue.component('abc',profile);
+// Vue.component('info', {
+//     template: '#info'
+// });
+
+
+var vue = new Vue({
+    el: '#app',
+    data: {
+        isShow: false,
+        name: 'home'
+        // message: '这是一条消息'
+    },
+    methods: {
+        addFn: function () {
+            this.isShow = !this.isShow;
+            this.name = this.isShow ? 'home' : 'abx';
+        }
+    },
+    components: {
+        abx: {
+            template: '#info',
+            methods: {
+                appFn: function () {
+                    this.numbers++;
+                    this.isShow = !this.isShow;
+                    // alert('99');
+                }
+            },
+            data: function () {
+                return {
+                    message: '1233444',
+                    numbers: 0,
+                    isShow: false
+                };
+            }
+        },
+        home: {
+            template: '#home',
+            methods: {
+                appFn: function () {
+                    this.numbers++;
+                    this.isShow = !this.isShow;
+                    // alert('99');
+                }
+            },
+            data: function () {
+                return {
+                    message: '1233444',
+                    numbers: 0,
+                    isShow: false
+                };
+            }
+        },
+        father: {
+            template: '#father',
+            data: function () {
+                return {
+                    name: 'yang',
+                    age: 18,
+                    names: ['zhang', 'li', 'yang']
+                };
+            },
+            methods: {
+                fatherFn: function (value) {
+                    alert('father被你调用了');
+                    this.name = value;
+                }
+            },
+            components: {
+                son: {
+                    template: '#son',
+                    props: ['fname', 'fage'],
+                    methods: {
+                        sonFn: function () {
+                            this.$emit('pfn', '这是传过来的参数');
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+});
+</script>
+</body>
+</html>

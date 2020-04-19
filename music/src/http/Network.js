@@ -12,6 +12,7 @@ export default {
     // GET
     get: function get(path = '', params = {}) {
         return new Promise(function (resolve, reject) {
+            console.log(params);
             axios.get(path, params).then(function (response) {
                 console.log(response);
                 resolve(response.data);

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Promise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+<body>
+
+    <script>
+
+    function loadUrl1(success) {
+        setTimeout(() => {
+            success(11);
+        }, 1000);
+    }
+
+    function loadUrl2(success) {
+        setTimeout(() => {
+            success(12);
+        }, 5000);
+    }
+
+    function loadUrl3(success) {
+        setTimeout(() => {
+            success(13);
+        }, 5000);
+    }
+
+    // loadUrl1(function (tag) {
+    //     console.log(tag);
+    //     loadUrl2(function (tag) {
+    //         console.log(tag);
+    //         loadUrl3(function (tag) {
+    //             console.log(tag);
+    //         });
+    //     });
+    // });
+
+    function One(fuc) {
+        fuc('two');
+        console.log('one');
+    }
+    // one();
+
+    // var one = new One(function (tag) {
+    //     console.log(tag);
+    // });
+
+    function three(tag) {
+        tag(function (tag) {
+            console.log(tag);
+        });
+        console.log(3);
+    }
+    three(One);
+
+    // let two = function () {
+    //     console.log('two');
+    // };
+
+    function request1() {
+        return new Promise(function (re, er) {
+            setTimeout(() => {
+                re(11);
+            }, 2000);
+        });
+     };
+
+    let url2Promise = new Promise(function (re, er) {
+        setTimeout(() => {
+            re(12);
+        }, 2000);
+    });
+    request1().then(function (re, er) {
+        console.log(re);
+        return request1();
+    }).then(function (re, er) {
+        console.log(re);
+        return {a: '123'};
+    }).then(function (re, er) {
+        console.log(re);
+    });
+        
+        
+        
+    </script>
+    
+</body>
+</html>

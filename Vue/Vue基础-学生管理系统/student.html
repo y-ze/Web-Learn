@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    #app {
+        /* background-color: blue; */
+        width: 70%;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    table {
+        /* border: 1px solid blue; */
+        /* background-color: red; */
+        width: 100%;
+        height: 100%;
+    }
+    td {
+        text-align: center;
+        /* border: 1px solid blue; */
+
+    }
+    td > input {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        text-align: center;
+        display: inline-block;
+    }
+
+    td > label {
+        display: inline-block;
+        float: left;
+    }
+    </style>
+
+
+
+</head>
+<body>
+
+    <div id="app">
+        <table border="1">
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>成绩</th>
+                <th>班级</th>
+                <th>更新时间</th>
+                <th>是否录用</th>
+                <th>操作</th>
+            </tr>
+
+            <tr v-for="(User, index) in Users">
+                <td>
+                    <input type="text" :disabled="User.isDisabled" name="学号" v-model="User.index" placeholder="edit me">
+                </td>
+                <td>
+                    <input type="text" :disabled="User.isDisabled" name="姓名" v-model="User.name">
+                </td>
+                <td>
+                    <input type="number" :disabled="User.isDisabled" name="年龄" v-model="User.age">
+                </td>
+                <td>
+                    <input type="text" :disabled="User.isDisabled" name="成绩" v-model="User.score">
+                </td>
+                <td>
+                    <select name="" 
+                            id="" 
+                            v-show="!User.isDisabled" 
+                            v-model="User.bj">
+                        <option disabled value="0">请选择班级</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                    <span v-show="User.isDisabled">{{User.bj}}</span>
+                </td>
+                <td>
+                    {{User.time | timeFormatters(User.time)}}
+                </td>
+                <td>
+                    <input v-show="!User.isDisabled" v-model="User.isJ" type="checkbox" name="" id="">
+                    <label :style=" { color : isGlColor(User) } ">
+                        {{ islYString(User) }}
+                    </label>
+                </td>
+                <td>
+                    <button type="button" v-on:click="editFuc(User)">
+                        {{editString(User)}}
+                    </button>
+                    <button type="button" v-on:click="deleteFuc(User)">
+                        删除
+                    </button>
+                </td>
+            </tr>
+            
+            
+        </table>
+        <button type="button" v-on:click="addFuc">新增</button>
+    </div>
+
+ <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script>
+    var myUsers = [];
+
+    var vue = new Vue({
+            el: '#app',
+            data: {
+                Users: [{
+                    index: 1,
+                    name: 'zhangsan',
+                    age: 16,
+                    bj: 2,
+                    score: 99,
+                    isDisabled: true,
+                    isJ: false,
+                    time: Date.now()
+                },
+                {
+                    index: 2,
+                    name: 'zhangsan',
+                    age: 16,
+                    score: 99,
+                    isDisabled: true,
+                    bj: 3,
+                    isJ: true,
+                    time: Date.now()
+                },
+                {
+                    index: 3,
+                    name: 'zhangsan',
+                    age: 16,
+                    bj: 1,
+                    score: 99,
+                    isDisabled: true,
+                    isJ: true,
+                    time: Date.now()
+                }]
+            },
+            computed: {
+                
+            },
+            filters: {
+                timeFormatters: function (value) {
+                    // 比如需要这样的格式 yyyy-MM-dd hh:mm:ss
+                    var date = new Date(value);
+                    let Y = date.getFullYear();
+                    let M = date.getMonth();
+                    let Day = date.getDate();
+                    let H = date.getHours();
+                    let m = date.getMinutes();
+                    let s = date.getSeconds();
+                    return Y + '-' + M + '-' + Day + ' ' + H + ':' + m + ':' + s;
+                }
+            },
+            methods: {
+                editFuc: function (user) {
+                    // user.
+                    if (!user.isDisabled) {
+                        user.time = Date.now();
+                    }
+                    user.isDisabled = !user.isDisabled;
+                },
+                deleteFuc: function (user) {
+                    var index = this.Users.indexOf(user);
+                    if (index > -1) {
+                        this.Users.splice(index, 1);
+                    }
+                },
+                isGlColor: function (User) {
+                    if (User.isJ) {
+                        return '#000000';
+                    }
+                    return '#DC143C';
+                },
+                islYString: function (User) {
+                    if (User.isJ) {
+                        return '录用';
+                    }
+                    return '拒绝';
+                },
+                editString: function (User) {
+                    if (User.isDisabled === false) {
+                        return '完成';
+                    }
+                    return '编辑';
+                },
+                addFuc: function () {
+                    var user = {
+                            index: 0,
+                            name: '',
+                            age: 0,
+                            bj: 0,
+                            score: 0,
+                            isDisabled: false,
+                            isJ: false,
+                            time: Date.now()
+                     };
+                    this.Users.push(user);
+                }
+            }
+        });
+    
+</script>
+</body>
+</html>

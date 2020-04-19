@@ -1,0 +1,22 @@
+/*
+@mixin animate($name, $time, $mode, $delay){
+  transition: $name $time $mode $delay;
+}
+ */
+/*
+@mixin animate($args...){
+  transition: $args;
+}
+ */
+div {
+  width: 200px;
+  height: 200px;
+  background: red;
+  transition: all 4s linear, 0s;
+}
+
+div:hover {
+  width: 400px;
+  height: 400px;
+  background: blue;
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>广告</title>
+
+    <script src="JS/YZAnimation.js"></script>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .container {
+            width: 670px;
+            height: 300px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 1px solid #000;
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        p {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            /* height: 100%; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        span {
+            width: 30px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            background: rgba(0,0,0,0.5);
+            color: #fff;
+            font-size: 40px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <ul>
+            <li><img src="images/ad1.jpg" alt=""></li>
+            <li><img src="images/ad2.jpg" alt=""></li>
+            <li><img src="images/ad3.jpg" alt=""></li>
+            <li><img src="images/ad4.jpg" alt=""></li>
+            <li><img src="images/ad5.jpg" alt=""></li>
+            <li><img src="images/ad6.jpg" alt=""></li>
+            <li><img src="images/ad1.jpg" alt=""></li>
+        </ul>
+        <p>
+                <span class="left">&lt;</span>
+                <span class="right">&gt;</span>
+        </p>
+        
+    </div>
+
+    <script>
+        window.onload = function () {
+            let leftSpan = document.querySelector(".left");
+            let rightSpan = document.querySelector(".right");
+            let currentIndex = 0;
+            let items = document.querySelectorAll("ul>li");
+            let oBox = document.querySelector(".container");
+            let ul = document.querySelector("ul");
+            let timeID ;
+            console.log(items);
+            let imageWidth = parseFloat(getComputedStyle(items[0]).width);
+            leftSpan.onclick = function () {
+                currentIndex --;
+                if(currentIndex < 0){
+                    currentIndex = items.length - 1;
+                    ul.style.marginLeft = -currentIndex * imageWidth + "px";
+                    currentIndex --;
+                }
+                let oImage = items[currentIndex];
+                linearAnimation(ul,"marginLeft",-imageWidth * currentIndex,1);
+            }
+
+            rightSpan.onclick = function () {
+                currentIndex ++;
+                if(currentIndex >= items.length) { 
+                    currentIndex = 0;
+                    ul.style.marginLeft = -currentIndex * imageWidth + "px";
+                    currentIndex ++;
+                }
+                    let oImage = items[currentIndex];
+                    linearAnimation(ul,"marginLeft",-imageWidth * currentIndex,1.0);
+            }
+
+            
+
+
+        }
+ 
+		
+
+    </script>
+    
+</body>
+</html>

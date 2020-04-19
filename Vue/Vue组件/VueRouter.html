@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VueRouter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="vue-router.js"></script>
+    <style>
+    #foo {
+        background-color: red;
+    }
+    #aoo {
+        background-color: blue;
+    }
+    </style>
+</head>
+<body>
+
+
+    <div id="App">
+        <p>Hello App</p>
+        <p>
+            <router-link to="/foo/yangze/18">to Footer</router-link>
+            <router-link to="/aoo/liruixue/17">to Head</router-link>        
+        </p>
+        <!-- <router-view></router-view> -->
+        <!-- <foo></foo>
+        <aoo></aoo> -->
+        <!-- <component v-bind:is="'foo'"><component> -->
+
+        <!-- <a href="#/foo">切换到第一个界面</a>
+        <a href="#/aoo">切换到第二个界面</a> -->
+
+        <router-view></router-view>
+    </div>
+
+    <!-- 定义一个组件 -->
+    <template id="foo">
+
+        <div>
+            foo
+            <p>我叫 {{name}} 今年 {{ age }} 岁</p>
+        </div>
+    </template>
+
+    <template id="aoo">
+        <div>
+            header
+        </div>
+    </template>
+
+
+    <script>
+
+    const foo = {
+        data: function () {
+            return {
+                name: '',
+                age: 0
+            };
+        },
+        template: '#foo',
+        created: function () {
+            this.name = this.$route.params.name;
+            this.age = this.$route.params.age;
+            console.log(this.$route.params);
+        }
+    };
+    const aoo = {
+        template: '#aoo'
+    };
+        //  定义router
+    const routers = [
+        {path: '/foo/:name/:age', component: foo},
+        {path: '/aoo/:name/:age', component: aoo}
+    ];
+    const router = new VueRouter({
+        routes: routers
+    });
+
+    var vue = new Vue({
+        el: '#App',
+        data: {
+            name: 'hehe',
+            // foo: '#foo'
+        },
+        router:router
+        // routers: [
+        //     {path: '/foo', component: 'foo'},
+        //     {path: '/bar', component: 'head'}
+        // ]
+    });
+    
+    
+    </script>
+
+</body>
+</html>

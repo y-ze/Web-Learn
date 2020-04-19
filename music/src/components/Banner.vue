@@ -1,7 +1,7 @@
 <template>
   <div class="banner">
         <swiper ref="mySwiper" :options="swiperOptions" class="swiper" v-if="banners.length > 0">
-        <swiper-slide v-for="banner in banners" :key="banner.targetId">
+        <swiper-slide v-for="(banner, index) in banners" :key="index">
         <a :href="banner.url" :key="banner.targetId">
             <img :src="banner.imageUrl">
         </a>
@@ -47,6 +47,11 @@ export default {
             }
             
         };
+    },
+    methods: {
+        log: function log() {
+            console.log('吊我了');
+        }
     },
     props: {
         banners: {

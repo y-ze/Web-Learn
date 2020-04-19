@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e9beb6cd-5e2e-4068-97cf-6ddeed1b99f0" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/瀑布流/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/瀑布流/js/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2340">
+              <caret line="119" column="11" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+              <folding>
+                <element signature="n#!!block;n#loadImages#0" />
+                <element signature="n#!!block;n#waterfall#0" />
+                <element signature="n#!!block;n#resetWidth#0" />
+                <element signature="n#!!block;n#preLoadImage#0" />
+                <element signature="n#!!block;n#preLoadImages#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/瀑布流/图片的加载问题.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1395">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
+              <folding>
+                <element signature="e#785#1008#0" />
+                <element signature="e#1046#1560#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fromCharCode</find>
+      <find>-----------------------------</find>
+      <find>50</find>
+      <find>snakeMap</find>
+      <find>.bottom</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>*//*</replace>
+      <replace>#tab_bottom</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/51-JavaScript-History.html" />
+        <option value="$PROJECT_DIR$/51-JavaScript-Location.html" />
+        <option value="$PROJECT_DIR$/52-JavaScript-History2.html" />
+        <option value="$PROJECT_DIR$/52-JavaScript-History.html" />
+        <option value="$PROJECT_DIR$/53-JavaScript-获取元素宽高其它方式.html" />
+        <option value="$PROJECT_DIR$/54-JavaScript-获取元素位置其它方式.html" />
+        <option value="$PROJECT_DIR$/41-JavaScript-事件执行的三个阶段.html" />
+        <option value="$PROJECT_DIR$/56-JavaScript-offsetParent.html" />
+        <option value="$PROJECT_DIR$/55-JavaScript-client属性.html" />
+        <option value="$PROJECT_DIR$/55-JavaScript-offsetParent.html" />
+        <option value="$PROJECT_DIR$/56-JavaScript-client属性.html" />
+        <option value="$PROJECT_DIR$/57-JavaScript-scroll属性.html" />
+        <option value="$PROJECT_DIR$/59-JavaScript-可视区域宽高.html" />
+        <option value="$PROJECT_DIR$/58-JavaScript-获取网页宽高.html" />
+        <option value="$PROJECT_DIR$/59-JavaScript-星空背景.html" />
+        <option value="$PROJECT_DIR$/60-JavaScript-弹性导航.html" />
+        <option value="$PROJECT_DIR$/39-JavaScript-联动动画.html" />
+        <option value="$PROJECT_DIR$/61-JavaScript-百度登录.html" />
+        <option value="$PROJECT_DIR$/62-JavaScript-大图展示.html" />
+        <option value="$PROJECT_DIR$/63-JavaScript-网页滚动距离.html" />
+        <option value="$PROJECT_DIR$/64-JavaScript-跟随广告.html" />
+        <option value="$PROJECT_DIR$/65-JavaScript-吸顶效果.html" />
+        <option value="$PROJECT_DIR$/66-JavaScript-返回顶部.html" />
+        <option value="$PROJECT_DIR$/demo.html" />
+        <option value="$PROJECT_DIR$/js/animation2.js" />
+        <option value="$PROJECT_DIR$/67-JavaScript-楼层效果.html" />
+        <option value="$PROJECT_DIR$/68-JavaScript-自定义滚动条.html" />
+        <option value="$PROJECT_DIR$/瀑布流示例/瀑布流.html" />
+        <option value="$PROJECT_DIR$/瀑布流示例/css/index.css" />
+        <option value="$PROJECT_DIR$/瀑布流示例/js/waterfall.js" />
+        <option value="$PROJECT_DIR$/69-JavaScript-函数节流.html" />
+        <option value="$PROJECT_DIR$/70-JavaScript-函数节流.html" />
+        <option value="$PROJECT_DIR$/68-JavaScript-橱窗效果.html" />
+        <option value="$PROJECT_DIR$/69-JavaScript-函数防抖.html" />
+        <option value="$PROJECT_DIR$/70-JavaScript-函数防抖封装.html" />
+        <option value="$PROJECT_DIR$/71-JavaScript-函数节流.html" />
+        <option value="$PROJECT_DIR$/71-JavaScript-函数防抖练习.html" />
+        <option value="$PROJECT_DIR$/72-JavaScript-函数节流.html" />
+        <option value="$PROJECT_DIR$/73-JavaScript-函数节流封装.html" />
+        <option value="$PROJECT_DIR$/js/tools.js" />
+        <option value="$PROJECT_DIR$/瀑布流示例/js/index.js" />
+        <option value="$PROJECT_DIR$/瀑布流/css/index.css" />
+        <option value="$PROJECT_DIR$/视频播放器示例/demo.html" />
+        <option value="$PROJECT_DIR$/视频播放器示例/js/index.js" />
+        <option value="$PROJECT_DIR$/视频播放器/index.html" />
+        <option value="$PROJECT_DIR$/视频播放器/css/index.css" />
+        <option value="$PROJECT_DIR$/视频播放器/js/index.js" />
+        <option value="$PROJECT_DIR$/瀑布流/index.html" />
+        <option value="$PROJECT_DIR$/瀑布流/图片加载问题.html" />
+        <option value="$PROJECT_DIR$/瀑布流/图片的加载问题.html" />
+        <option value="$PROJECT_DIR$/瀑布流/js/index.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="765" />
+    <option name="y" value="20" />
+    <option name="width" value="1550" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="JavaScript基础" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaScript基础" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SASS" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Jonathan_Lee\Desktop\JavaScript基础\瀑布流\js" />
+      <recent name="C:\Users\Jonathan_Lee\Desktop\JavaScript基础\视频播放器\images" />
+      <recent name="C:\Users\Jonathan_Lee\Desktop\JavaScript基础\视频播放器\fonts" />
+      <recent name="C:\Users\Jonathan_Lee\Desktop\JavaScript基础\视频播放器\js" />
+      <recent name="C:\Users\Jonathan_Lee\Desktop\JavaScript基础" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Jonathan_Lee\Desktop\JavaScript基础\ECMAScript" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Jonathan_Lee\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e9beb6cd-5e2e-4068-97cf-6ddeed1b99f0" name="Default Changelist" comment="" />
+      <created>1553134694022</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553134694022</updated>
+      <workItem from="1553134695672" duration="293000" />
+      <workItem from="1553135002733" duration="337000" />
+      <workItem from="1553135373773" duration="29112000" />
+      <workItem from="1553184459681" duration="3000" />
+      <workItem from="1553184550966" duration="665000" />
+      <workItem from="1553229300830" duration="2341000" />
+      <workItem from="1553315938578" duration="18939000" />
+      <workItem from="1553485594438" duration="29788000" />
+      <workItem from="1553574250021" duration="30954000" />
+      <workItem from="1553655487541" duration="23319000" />
+      <workItem from="1553744595667" duration="25947000" />
+      <workItem from="1553828120508" duration="26852000" />
+      <workItem from="1553919649976" duration="40817000" />
+      <workItem from="1554092075771" duration="14602000" />
+      <workItem from="1554117381048" duration="6746000" />
+      <workItem from="1554173551452" duration="36580000" />
+      <workItem from="1554256431423" duration="32447000" />
+      <workItem from="1554344332577" duration="33666000" />
+      <workItem from="1554429562289" duration="4055000" />
+      <workItem from="1554523424509" duration="21892000" />
+      <workItem from="1554611781020" duration="1565000" />
+      <workItem from="1554618974631" duration="47770000" />
+      <workItem from="1554781014993" duration="32866000" />
+      <workItem from="1554863788785" duration="32382000" />
+      <workItem from="1554944912758" duration="15719000" />
+      <workItem from="1554974756196" duration="2389000" />
+      <workItem from="1554981051200" duration="14199000" />
+      <workItem from="1555037454272" duration="54752000" />
+      <workItem from="1555141857514" duration="16332000" />
+      <workItem from="1555160496174" duration="559000" />
+      <workItem from="1555161313662" duration="2789000" />
+      <workItem from="1555222217885" duration="17465000" />
+      <workItem from="1555299442070" duration="30495000" />
+      <workItem from="1555384344425" duration="431000" />
+      <workItem from="1555402317960" duration="165000" />
+      <workItem from="1555402530717" duration="104000" />
+      <workItem from="1555406921777" duration="3241000" />
+      <workItem from="1555473512975" duration="3724000" />
+      <workItem from="1555479422756" duration="23973000" />
+      <workItem from="1555506025174" duration="296000" />
+      <workItem from="1555513652567" duration="587000" />
+      <workItem from="1555554238850" duration="40219000" />
+      <workItem from="1555642899029" duration="17114000" />
+      <workItem from="1555662814369" duration="158000" />
+      <workItem from="1555662986825" duration="15261000" />
+      <workItem from="1555733610332" duration="20722000" />
+      <workItem from="1555822248122" duration="31331000" />
+      <workItem from="1555901460337" duration="29051000" />
+      <workItem from="1555988099668" duration="32597000" />
+      <workItem from="1556078229281" duration="25304000" />
+      <workItem from="1556161188160" duration="14920000" />
+      <workItem from="1556512686729" duration="63095000" />
+      <workItem from="1556676766077" duration="34401000" />
+      <workItem from="1556939073064" duration="5145000" />
+      <workItem from="1557026416935" duration="32108000" />
+      <workItem from="1557119524393" duration="27000" />
+      <workItem from="1557920264868" duration="7783000" />
+      <workItem from="1557982790040" duration="9000" />
+      <workItem from="1558097741873" duration="843000" />
+      <workItem from="1558328191905" duration="12533000" />
+      <workItem from="1558342059254" duration="30000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1063809000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11116965" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="0" />
+      <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="TODO" order="4" />
+      <window_info anchor="bottom" id="Debug" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/39-JavaScript-添加事件三种方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="72" selection-start-column="4" selection-end-line="78" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/63-JavaScript-网页滚动距离.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="71" column="43" selection-start-line="71" selection-start-column="43" selection-end-line="71" selection-end-column="43" />
+          <folding>
+            <element signature="e#1467#1987#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/64-JavaScript-跟随广告.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-27">
+          <caret line="72" column="13" selection-start-line="72" selection-start-column="13" selection-end-line="72" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html" />
+    <entry file="file://$PROJECT_DIR$/js/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="987">
+          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/animation2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="30" column="41" lean-forward="true" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding>
+            <element signature="e#84#1026#0" />
+            <element signature="e#1068#1966#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/45-JavaScript-位置获取.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="28" column="11" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="52" column="16" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/65-JavaScript-吸顶效果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/66-JavaScript-返回顶部.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2835">
+          <caret line="63" column="15" selection-start-line="51" selection-start-column="8" selection-end-line="63" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/67-JavaScript-楼层效果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4230">
+          <caret line="94" column="47" selection-start-line="94" selection-start-column="47" selection-end-line="94" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/images/img02.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/js/animation2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/js/waterfall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/57-JavaScript-scroll属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/54-JavaScript-获取元素位置其它方式.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="37" column="6" lean-forward="true" selection-start-line="37" selection-start-column="6" selection-end-line="37" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ECMAScript/111-JavaScript-bind-call-apply.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-405" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/70-JavaScript-函数节流.html" />
+    <entry file="file://$PROJECT_DIR$/68-JavaScript-橱窗效果.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="634">
+          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/71-JavaScript-函数防抖练习.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/70-JavaScript-函数防抖封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="e#205#423#0" />
+            <element signature="e#428#1131#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#40#560#0" />
+            <element signature="e#590#1050#0" />
+            <element signature="e#1088#1237#0" />
+            <element signature="e#1275#1428#0" />
+            <element signature="e#1462#1774#0" />
+            <element signature="e#1808#2230#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流/js/animation2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/73-JavaScript-函数节流封装.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/72-JavaScript-函数节流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="66" column="33" selection-start-line="65" selection-start-column="12" selection-end-line="66" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/69-JavaScript-函数防抖.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流/js/tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="21" />
+          <folding>
+            <element signature="e#40#560#0" />
+            <element signature="e#590#1050#0" />
+            <element signature="e#1088#1237#0" />
+            <element signature="e#1275#1428#0" />
+            <element signature="e#1462#1774#0" />
+            <element signature="e#1808#2230#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/js/tools.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1534">
+          <caret line="57" column="58" selection-start-line="57" selection-start-column="49" selection-end-line="57" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/视频播放器示例/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/视频播放器示例/demo.html" />
+    <entry file="file://$PROJECT_DIR$/视频播放器/js/animation2.js" />
+    <entry file="file://$PROJECT_DIR$/视频播放器/fonts/iconfont.css" />
+    <entry file="file://$PROJECT_DIR$/视频播放器/images/loading.gif" />
+    <entry file="file://$PROJECT_DIR$/29-JavaScript-时间计算.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/30-JavaScript-京东秒杀.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1665">
+          <caret line="121" column="9" lean-forward="true" selection-start-line="107" selection-start-column="7" selection-end-line="121" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/48-JavaScript-高级日期格式化.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <folding>
+            <element signature="e#496#2004#0" />
+            <element signature="e#2124#2805#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/视频播放器示例/js/tools.js" />
+    <entry file="file://$PROJECT_DIR$/视频播放器/index.html" />
+    <entry file="file://$PROJECT_DIR$/视频播放器示例/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/ECMAScript/89-JavaScript-预解析练习4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/视频播放器/js/index.js" />
+    <entry file="file://$PROJECT_DIR$/视频播放器/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/瀑布流/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流/js/preloadjs.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流示例/瀑布流.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="3" column="26" lean-forward="true" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流/图片加载问题.html" />
+    <entry file="file://$PROJECT_DIR$/瀑布流/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="119" column="11" selection-start-line="119" selection-start-column="11" selection-end-line="119" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!block;n#loadImages#0" />
+            <element signature="n#!!block;n#waterfall#0" />
+            <element signature="n#!!block;n#resetWidth#0" />
+            <element signature="n#!!block;n#preLoadImage#0" />
+            <element signature="n#!!block;n#preLoadImages#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/瀑布流/图片的加载问题.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="e#785#1008#0" />
+            <element signature="e#1046#1560#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

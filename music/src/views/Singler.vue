@@ -8,6 +8,11 @@
 
             </div>
             <div class="icon-dot"></div>
+            <div class="father">
+                <div class="son">
+                    <div class="son1">这是一个秋天</div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -49,5 +54,22 @@ export default {
     background-clip: content-box;
     box-sizing: border-box;
 }
+
+.father {
+    width: 300px;
+    height: 150px;
+    background-color: gray;
+    position: relative;
+}
+
+.son {
+    position: absolute;
+    top: 0; right:  0; bottom:  0; left: 0;
+    width: 200px; height: 100px;
+    margin: auto;
+    background: red;
+}
+
+
 
 </style>

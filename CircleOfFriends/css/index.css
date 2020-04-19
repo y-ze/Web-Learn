@@ -23,7 +23,7 @@ body {
 
 .circle-header > h4 {
     text-align: center;
-    line-height: 320px;
+    line-height: 1.5;
     font-size: 30px;
     color: #FFF;
 }
@@ -39,7 +39,7 @@ body {
 }
 
 .circle-header-info-nickname {
-    line-height: 50px;
+    line-height: 1.5;
     margin-left: 20px;
     color: #FFF;
 }
@@ -137,6 +137,7 @@ img {
 .circle-body-desc-comment {
     margin-top: 7px;
     background-color: rgb(240, 240, 240);
+    border-radius: 1px;
 }
 
 .circle-body-desc-comment-zan {
@@ -156,27 +157,28 @@ img {
     display: inline-block;
 }
 
-.circle-body-desc-comment-zan > div {
+.circle-body-desc-comment-zan > p {
     line-height: 30px;
     margin-left: 5px;
+    text-align: center;
     color: rgb(73, 90, 133);
     font-size: 12px;
 }
 
 .circle-body-desc-comment-list {
-    padding: 0;
+    padding: 5px 0 5px 0;
     margin: 0;
     background-color: rgba(1, 1, 1, 0);
     margin-left: 10px;
 }
 
-.circle-body-desc-comment-list > p {
-    line-height: 20px;
+.circle-body-desc-comment-list  p {
+    line-height: 100%;
     font-size: 12px;
 }
 
-.circle-body-desc-comment-list > p  a {
-    line-height: 20px;
+.circle-body-desc-comment-list  a {
+    line-height: 1.5;
     text-decoration: none;
     font-size: 12px;
     color: rgb(73, 90, 133);

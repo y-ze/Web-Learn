@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueX 数据传递练习</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="app">
+        <father></father>
+    </div>
+
+    <template id="father">
+        <div>
+            father
+            <son1 v-on:sonbridge="numberBridge"></son1>
+            <son2 v-bind:number="number"></son2>
+        </div>
+        
+    </template>
+
+    <template id="son1">
+        <div>son1
+            <button @click="add" type="button">增加</button>
+            <button @click="reduce" type="button">减少</button>
+            <input type="text" v-model="number">
+        </div>
+    </template>
+
+    <template id="son2">
+        <div>{{number}}</div>
+    </template>
+
+
+    <script>
+        var vue = new Vue({
+            el: '#app',
+            data: {
+
+            },
+            components: {
+                father: {
+                    template: '#father',
+                    data: function () {
+                        return {
+                            number: 0
+                        };
+                    },
+                    methods: {
+                        numberBridge: function (value) {
+                            this.number = value;
+                        }
+                    },
+                    components: {
+                        son1: {
+                            template: '#son1',
+                            data: function () {
+                                return {
+                                    number: 0
+                                };
+                            },
+                            methods: {
+                                add: function () {
+                                    this.number++;
+                                    // this.$emit('sonbridge',this.number);
+                                },
+                                reduce: function () {
+                                    this.number--;
+                                    // this.$emit('sonbridge',this.number);
+                                }
+                            },
+                            watch: {
+                                number: function (val, oldVal) {
+                                    this.$emit('sonbridge', this.number);
+                                }
+                            }
+                        },
+                        son2: {
+                            template: '#son2',
+                            props: ['number']
+                        }
+                    }
+                }
+            }
+        });
+        // vue.$watch('number', function (newVal, oldVal) {
+        //     console.log('99999');
+        //     this.$emit('sonbridge', this.number);
+        // });
+    </script>
+    
+</body>
+</html>
